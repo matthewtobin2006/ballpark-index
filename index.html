@@ -289,15 +289,15 @@ document.getElementById('ov').addEventListener('click',e=>{if(e.target.id==='ov'
 function setTheme(t){
   const el=document.getElementById('sp');
   const v=t.dk?{
-    sb:'#0a0e14',sbd:'#07090f',shb:`linear-gradient(135deg,${t.p}22 0%,#0a0e14 65%)`,
-    st:'#e8e2d4',sh:'#ffffff',sm:'rgba(232,226,212,0.38)',
-    sa:t.s,sas:t.s+'18',sab:t.s+'30',
-    sc:'rgba(255,255,255,0.04)',sbr:'rgba(255,255,255,0.08)',sbt:'#0a0e14'
+    sb:'#0f0e0c',sbd:'#0a0908',shb:`linear-gradient(135deg,${t.p}28 0%,#0f0e0c 60%)`,
+    st:'#e8e0d0',sh:'#f5efe0',sm:'rgba(232,224,208,0.4)',
+    sa:t.s,sas:t.s+'20',sab:t.s+'35',
+    sc:'rgba(232,220,180,0.04)',sbr:'rgba(232,220,180,0.09)',sbt:'#0f0e0c'
   }:{
-    sb:t.p+'0d',sbd:t.p+'20',shb:`linear-gradient(135deg,${t.p}2a 0%,${t.p}06 70%)`,
-    st:'#111111',sh:'#000000',sm:'#666666',
-    sa:t.p,sas:t.p+'15',sab:t.p+'30',
-    sc:'rgba(255,255,255,0.8)',sbr:t.p+'20',sbt:'#ffffff'
+    sb:t.p+'10',sbd:t.p+'22',shb:`linear-gradient(135deg,${t.p}30 0%,${t.p}07 70%)`,
+    st:'#1a1208',sh:'#0d0a04',sm:'#5a4e3a',
+    sa:t.p,sas:t.p+'18',sab:t.p+'35',
+    sc:'rgba(255,255,255,0.75)',sbr:t.p+'22',sbt:'#ffffff'
   };
   for(const[k,val] of Object.entries(v)) el.style.setProperty('--'+k,val);
 }
