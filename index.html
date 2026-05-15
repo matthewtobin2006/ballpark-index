@@ -210,7 +210,7 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:1rem 2
   </div>
 </div>
 
-<script>
+<script defer>
 const T=[
 {id:110,abbr:'BAL',name:'Baltimore Orioles',stadium:'Oriole Park at Camden Yards',city:'Baltimore, MD',div:'AL East',lg:'AL',opened:1992,cap:44970,surf:'Grass',rating:8.9,rc:'3,241',p:'#DF4601',s:'#000000',dk:false,facts:[['Architect','HOK Sport'],['Opened','1992'],['Cost','$105M'],['Style','Pioneer retro-classic park']],dims:[['333','Left'],['364','L-Ctr'],['410','Center'],['318','Right']],unique:['Launched the retro-classic ballpark era','Eutaw St. home run coins','Warehouse beyond right field','Longest building on the East Coast'],legs:[{y:'1995',t:'Cal Ripken Jr. — 2,131 Consecutive Games',d:"One of sport's most celebrated records. Camden Yards erupted as Ripken surpassed Lou Gehrig's streak."},{y:'1997',t:'ALCS — Jeffery Maier',d:"A 12-year-old fan deflected a Derek Jeter fly ball into a home run, igniting one of baseball's great debates."},{y:'2015',t:'Ghost Game',d:'The only fans-prohibited regular-season game in MLB history — Orioles vs White Sox in empty Camden Yards.'}],food:[{i:'🦀',n:'Maryland Crab Cake',d:'Fresh-picked blue crab, Old Bay seasoning. A must-eat at Camden Yards.'},{i:'🥩',n:"Boog's BBQ",d:"Former Oriole Boog Powell's legendary pit beef stand beyond right field."},{i:'🍺',n:'National Bohemian',d:"The official beer of Baltimore. You're not at Camden Yards without one."}]},
 {id:111,abbr:'BOS',name:'Boston Red Sox',stadium:'Fenway Park',city:'Boston, MA',div:'AL East',lg:'AL',opened:1912,cap:37755,surf:'Grass',rating:9.6,rc:'5,812',p:'#BD3039',s:'#0D2B56',dk:false,facts:[['Opened','April 20, 1912'],['Status','Oldest active MLB ballpark'],['Green Monster','37ft 2in left field wall'],['Scoreboard','Hand-operated since 1934']],dims:[['310','Left'],['379','L-Ctr'],['420','Center'],['302','Right']],unique:['Oldest active MLB ballpark','The Green Monster — 37ft wall',"Pesky's Pole — only 302ft",'Manual scoreboard on the Monster'],legs:[{y:'2004',t:'The Comeback — ALCS vs Yankees',d:"Down 3-0, the Red Sox won four straight to end an 86-year drought."},{y:'1999',t:'Ted Williams Returns',d:"Williams threw the first pitch at the All-Star Game to a standing ovation."},{y:'2013',t:'Boston Strong World Series',d:"Months after the Marathon bombing, the Red Sox won the Series at Fenway for the first time since 1918."}],food:[{i:'🌭',n:'Fenway Frank',d:'Steamed hot dog in a split-top bun. Simple, perfect, irreplaceable.'},{i:'🍺',n:'Sam Adams Boston Lager',d:"Boston's own. Served ice cold throughout Fenway."},{i:'🥜',n:'Peanuts from the Vendors',d:"Bags tossed to you from 20 rows away — a Fenway tradition."}]},
@@ -468,7 +468,7 @@ function submitVote(){
   msg.textContent='✓ Thanks for rating ' + cur.stadium + '!';
 }
 
-if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',buildHome);}else{buildHome();}
+buildHome();
 </script>
 </body>
 </html>
