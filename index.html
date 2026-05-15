@@ -468,7 +468,7 @@ function submitVote(){
   msg.textContent='✓ Thanks for rating ' + cur.stadium + '!';
 }
 
-buildHome();
+if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',buildHome);}else{buildHome();}
 </script>
 </body>
 </html>
